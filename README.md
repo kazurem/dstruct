@@ -1,7 +1,22 @@
 # dstruct
 A header-only library containing famous data structures implemented from scratch using C++.
 
-## Installation:
+## Usage
+We can use the library's data structures by including the appropriate header files.
+```cpp
+#include <dlist.hpp> //importing doubly non circular linked list
+
+int main() {
+	dstruct::DList<int> list;
+	list.insert(0, 1); // [1]
+	list.insert(0, 2); // [2, 1]
+	list.insert(0, 3); // [3, 2, 1]
+
+	list.display()
+}
+```
+
+## Installation
 ### Option 1: System-wide (or Local Install)
 You can install the headers and CMake configuration files to a specific directory to use them in multiple projects.
 ```bash
@@ -16,7 +31,7 @@ cmake --install build
 
 ### Option 2: Integration via FetchContent (Recommended)
 Add dstruct directly to your project's CMakeLists.txt without downloading it manually:
-```bash
+```cmake
 include(FetchContent)
 
 FetchContent_Declare(
@@ -55,17 +70,17 @@ cmake --build build
 cd build && ctest
 ```
 
-## References:
+## References
 Some useful references:
 1. [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): A convention for commit messages.
 2. [CMake](https://cmake.org/documentation/): Meta build system
 3. [EditorConfig](https://editorconfig.org/): Consistent coding styles for multiple developers working on the same project across various editors and IDEs
 4. [gitattributes](https://git-scm.com/docs/gitattributes)
 5. [Commitizen](https://commitizen-tools.github.io/commitizen/): For standardized commit messages and automatic changelog updation.
-6. [clang-format](https://clang.llvm.org/docs/ClangFormat.html): Automatic code formatter provided by LLVM.
-7. [clang-tidy](https://clang.llvm.org/extra/clang-tidy/): A Linter provided by LLVM.
-8. [pre-commit](https://pre-commit.com/)
-9. [Google Test](https://github.com/google/googletest)
+6. [clang-format](https://clang.llvm.org/docs/ClangFormat.html): Tool to format C++ code automatically.
+7. [clang-tidy](https://clang.llvm.org/extra/clang-tidy/): A clang-based C++ linter tool.
+8. [pre-commit](https://pre-commit.com/): A framework for managing and maintaining multi-language pre-commit hooks.
+9. [Google Test](https://github.com/google/googletest):a specialized library utilized to conduct unit testing in the C++ programming language
 10. [Keep a changelog](https://keepachangelog.com/en/1.1.0/)
 
 

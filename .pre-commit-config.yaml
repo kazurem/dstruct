@@ -1,3 +1,5 @@
+# original: https://github.com/kr8457/MicroMouse-Simulator/blob/main/.pre-commit-config.yaml
+
 fail_fast: false
 repos:
   - repo: local
@@ -80,3 +82,4 @@ repos:
         name: "🪟 windows/💔 use UNIX · Use LF as line ending on Windows 🥺"
         args: [ '--fix=lf' ]
         description: "Ensures all files use LF line endings in the repository"
+        

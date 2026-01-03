@@ -1,4 +1,5 @@
-#https://github.com/kr8457/MicroMouse-Simulator/blob/main/.clang-tidy
+# original: https://github.com/kr8457/MicroMouse-Simulator/blob/main/.clang-tidy
+
 ---
 Checks: >-
   clang-diagnostic-*,
