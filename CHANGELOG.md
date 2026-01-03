@@ -5,7 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0]
+
+## [Unreleased]
+### Added
+1. Section in README.md for demonstrating using the library. Mentioned in [Issue #3](https://github.com/kazurem/dstruct/issues/3).
+### Fixed
+1. Documentation mistakes mentioned in [Issue #3](https://github.com/kazurem/dstruct/issues/3).
+2. Reference issue in CI files mentioned in [Issue #5](https://github.com/kazurem/dstruct/issues/5)
+
+## [0.1.0] - 2026-01-03
 ### Added
 1. [CMake](https://cmake.org/) meta build system
 2. Basic file structure (tests/ and include/)
