@@ -7,7 +7,7 @@ AlignArrayOfStructures: Left
 AlignConsecutiveAssignments:
   Enabled: true
   AcrossEmptyLines: false
-  AcrossComments: falsegit log
+  AcrossComments: false
   AlignCompound: true
   AlignFunctionDeclarations: false
   AlignFunctionPointers: false
