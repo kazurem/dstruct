@@ -28,6 +28,9 @@ FetchContent_MakeAvailable(dstruct)
 
 # Link your target
 target_link_libraries(your_project_name PRIVATE dstruct::dstruct)
+
+# Link your target
+target_link_libraries(your_project_name PRIVATE dstruct::dstruct)
 ```
 
 ### Usage
@@ -73,4 +76,15 @@ Some useful references:
 Thanks to [Nyx-4](https://github.com/nyx-4) for informing me of tools like commitizen and pre-commit-hooks. I modified the CI configuration made by him in [this pull request](https://github.com/kr8457/MicroMouse-Simulator/pull/15).
 
 
+## Usage Example
 
+#include <dstruct/dlist.hpp>
+
+int main() {
+    dstruct::DList<int> list;
+    list.insert(0, 1); // [1]
+    list.insert(0, 2); // [2, 1]
+    list.insert(0, 3); // [3, 2, 1]
+
+    list.display();
+}
